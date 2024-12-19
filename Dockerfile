@@ -5,7 +5,7 @@ FROM amazoncorretto:8
 WORKDIR /app
 
 # Copy the project files
-COPY ./target/reszui-assembly.jar .
+COPY reszui-assembly.jar .
 
 # Define the entry point for the container
 CMD ["java", "-jar", "reszui-assembly.jar"]
